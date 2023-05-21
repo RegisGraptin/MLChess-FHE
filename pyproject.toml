@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "playchessfhe"
+version = "0.1.0"
+description = ""
+authors = ["Regis GRAPTIN"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.3"
+chess = "^1.9.4"
+pandas = "^2.0.1"
+pgn2data = "^0.0.8"
+torch = "^2.0.1"
+scikit-learn = "^1.2.2"
+torchvision = "^0.15.2"
+pytorch-lightning = "^2.0.2"
+lightning = {extras = ["extra"], version = "^2.0.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
