@@ -4,3 +4,5 @@ data/*.pgn
 data/*.csv
 !data/samples_data.csv
 model/
+.ipynb_checkpoints/
+.artifacts/
