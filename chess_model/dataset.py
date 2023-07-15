@@ -28,12 +28,6 @@ class ChessDataset(Dataset):
             np.array(chess_columns[data["target_column"]])
         )
 
-        # return X, {
-        #     "piece": piece, 
-        #     "row": row, 
-        #     "column": column
-        # }
-
         return torch.tensor(X).type(torch.FloatTensor), (
             torch.tensor(piece).type(torch.FloatTensor), 
             torch.tensor(row).type(torch.FloatTensor), 

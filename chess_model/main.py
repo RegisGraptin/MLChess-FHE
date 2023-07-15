@@ -34,7 +34,7 @@ if __name__ == "__main__":
     train_loader = torch.utils.data.DataLoader(training_chess, batch_size=batch_size, shuffle=True, num_workers=6)
     val_loader   = torch.utils.data.DataLoader(testing_chess, batch_size=batch_size, num_workers=6)
 
-    model = SimpleModel()
+    model = ConvModel()
 
     # # training
     # trainer = pl.Trainer(max_epochs=5)

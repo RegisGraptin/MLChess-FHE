@@ -2,7 +2,11 @@
 lightning_logs/
 data/*.pgn
 data/*.csv
+!data/large_samples_data.csv
 !data/samples_data.csv
 model/
 .ipynb_checkpoints/
 .artifacts/
+deploy/
+analysis/
+chess_model/
